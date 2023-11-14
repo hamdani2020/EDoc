@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}
+HMS
+{% endblock %}
+
+{% block content %}
+
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+{% endfor %}
+
+
+<h1 style="text-align: center; font-size:80px;">Manage Appointments</h1>
+<a type="button" href="{{ url_for('addappointment') }}" style="float:right;position:static;top:-60px;right:300px" class="btn btn-secondary btn-lg">Book Appointment</a>
+<div class="row" style="margin-top:100px; margin-left:20px;margin-right:40px;">
+      <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Doctors Full Name</th>
+                <th scope="col">Patients Full Name</th>
+                <th scope="col">Appointment Time</th>
+                <th scope="col">Appointment Date</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Your rows inside the table HERE: -->
+            {% for item in items %}
+                <tr>
+                    <td>{{ item.Doctor }}</td>
+                    <td>{{ item.Patient }}</td>
+                    <td>{{ item.Time }}</td>
+                    <td>{{ item.Date }}</td>
+                    <td>
+                        <a class="btn btn-secondary btn-sm" href="{{ url_for('deleteappointment',id=item.id) }}">Remove</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

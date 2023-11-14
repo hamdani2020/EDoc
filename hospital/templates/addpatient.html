@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for message in get_flashed_messages() %}
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  {{ message }}
+	</div>
+{% endfor %}
+
+<h1>Add Patient</h1>
+<div class="shadow p-3 mb-5 bg-body rounded">
+	<form action='' method="POST">
+		{{ form.hidden_tag() }}
+
+        {{ form.firstname.label(class="form-label") }}
+		{{ form.firstname(class="form-control") }}
+		<br/>
+
+        {{ form.lastname.label(class="form-label") }}
+		{{ form.lastname(class="form-control") }}
+		<br/>
+
+		{{ form.email.label(class="form-label") }}
+		{{ form.email(class="form-control") }}
+		<br/>
+
+		{{ form.number.label(class="form-label") }}
+		{{ form.number(class="form-control") }}
+		<br/>
+
+		{{ form.address.label(class="form-label") }}
+		{{ form.address(class="form-control") }}
+		<br/>
+		
+		{{ form.prescription.label(class="form-label") }}
+		{{ form.prescription(class="form-control") }}
+		<br/>
+		
+		{{ form.submit(class="btn btn-primary") }}
+		<a href="{{ url_for('patient')}}" class="btn btn-secondary">Back</a>
+
+	</form>
+</div>
+
+{%  endblock %}
