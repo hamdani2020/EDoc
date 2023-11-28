@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    width: 100%;
+}
+.header{
+    width: 100vw;
+    height: 100vh;
+    background: #00122e;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #182842;
+    width: 70px;
+    padding: 10px 0;
+}
+
+nav ul{
+    margin-top: 90px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li img{
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: opacity 0.5s, background 0.5s;
+}
+
+nav ul li img:hover{
+    opacity: 1;
+    background: #4d6181;
+}
+.active{
+    opacity: 1;
+    background: #4d6181;
+}
+.container{
+    margin-left: 120px;
+    padding: 0 2.5%;
+}
+
+.top-icons{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding: 25px 0;
+}
+.top-icons img{
+    width: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+} 
+.row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.col-1{
+    flex-basis: 65%;
+}
+.col-2{
+    flex-basis: 33%;
+}
+.host-img{
+    width: 60%;
+    margin: 10px 350px;
+    border-radius: 15px;
+}
+.controls{
+    display: flex;
+    margin-left: 360px;
+    align-items: center;
+    justify-content: center;
+}
+.controls img{
+    width: 40px;
+    margin: 20px 30px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.controls .call-icon{
+    width: 70px;
+}
+.search-box{
+    right: 50%;
+    margin: 505px;
+    margin-left: 300px ;
+    height: 20px;
+    position: relative;
+    background: #4d6181;
+    
+}
+.search-box button{
+    display:flex;
+    justify-content: center;
+}

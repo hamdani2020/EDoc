@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .container {
+      margin: 100px auto;
+      max-width: 400px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fade-in 1s ease-out;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #333;
+      animation: slide-up 0.8s ease-out;
+    }
+
+    @keyframes slide-up {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+      animation: slide-up 0.8s ease-out;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      animation: slide-up 0.8s ease-out;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thank you! Our team will reach you as soon as possible.</h1>
+    <p>Please be patient.</p>
+    <a href="/" class="btn">Return to Home</a>
+  </div>
+</body>
+</html>

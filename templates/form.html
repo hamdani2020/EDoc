@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/form" method="POST">
+            <h2>Patient Data</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter Name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Mobile no.</label>
+                    <input type="number" placeholder="Enter Mobile Number" name="phone" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email id</label>
+                    <input type="email" placeholder="Enter Email id" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="age">Age</label>
+                    <input type="text" placeholder="Enter Age" name="Age" required>
+                </div>
+                <div class="input-box">
+                    <label for="Gender">Gender</label>
+                    <select id="sex" name="gender">
+                    <option value="sex">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Transgender">Transgender</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="height">Height</label>
+                    <input type="float" placeholder="Enter Height" name="height" required>
+                </div>
+                <div class="input-box">
+                    <label for="Weight">Weight</label>
+                    <input type="text" placeholder="Enter Weight" name="Weight" required>
+                </div>
+                <div class="input-box">
+                    <label for="bloodgroup">Blood Group</label>
+                    <select id="bloodgroup"  name="bloodgroup">
+                        <option value="bloodgroup">Select Blood Group </option>
+                        <option value="A+" >A+</option>
+                        <option value="A-" >A-</option>
+                        <option value="B+" >B+</option>
+                        <option value="B-" >B-</option>
+                        <option value="O+" >O+</option>
+                        <option value="O-" >O-</option>
+                        <option value="AB-" >AB-</option>
+                        <option value="AB+" >AB+</option>
+                        </select>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit" name="submit" value="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

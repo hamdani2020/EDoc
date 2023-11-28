@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 100px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Meeting!</h1>
+  <p>Please enter your name:</p>
+  <input type="text" id="name-input">
+  <button onclick="addLink()">Join Meeting</button>
+
+  <script>
+    function addLink() {
+      var name = document.getElementById('name-input').value;
+      var gmeetLink = 'https://meet.google.com/zoa-shqt-kmm'; 
+
+      var message = document.createElement('p');
+      message.textContent = 'Join the meeting, ' + name + '! ' + gmeetLink;
+      document.body.appendChild(message);
+    }
+  </script>
+</body>
+</html>

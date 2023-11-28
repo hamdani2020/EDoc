@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.webmedconsult</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://kit.fontawesome.com/382c9e01c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-back">
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="static/the logo.png" class="logo">
+                <ul id="sidemenue">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Doctors">Doctors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/login">login</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenue()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenue()"></i>
+            </nav>
+            <div class="headertext">
+                <h3>We the future of healthcare</h3>
+                
+                <h1>
+                    <span>Web-<span>medconsult</span></span>
+                </h1>
+                <ui>
+
+                </ui>
+            </div>
+        </div>
+
+    </div>
+    <!--------------------------------------- ABOUT -------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="static/6405535_25595.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">
+                        About us
+                    </h1>
+                    <p>  Web-medconsult is on a mission to make quality healthcare affordable and accessible for over a billion+ Indians. We believe in empowering our users with the most accurate, comprehensive, and curated information and care, enabling them to make better healthcare decisions.</p>
+
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link"onclick="opentab('skills')">our mission</p>
+                        <p class="tab-links"onclick="opentab('exprience')">our offrings</p>
+                        <p class="tab-links"onclick="opentab('education')">our approach to healthcare</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Health is a habit</span>
+                                It is the journey that takes you to new destinations every day with endless possibilities of life on the back of happiness, energy, and hope. Practo wants to make this journey easy for every Indian and help them live healthier and longer lives.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exprience">
+                        <ul>
+                            <li><span>exprience</span><br>design front-end templets</li>
+                            <li><span>exprience</span><br>design front-end templets</li>
+                            <li><span>exprience</span><br>design front-end templets</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UG [2023]</span><br>DR D.Y. Patil ACS</li>
+                            <li><span>HSC [2019]</span><br>SUNNY'S SPRINGDALE SCHOOL</li>
+                            <li><span>SSC [2017]</span><br>ST.PETER'S SCHOOL</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!------------------------------------------ sercices -------------------------------------->
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-video"></i><!-------------------logo ---------------------->
+                <h2>Video chat with doc</h2>
+                <p></p>
+                <a href="/form"><span>Click me call</span></a>
+            </div>
+            <div>
+                <i class="fa-regular fa-calendar-check"></i><!-------------------logo ---------------------->
+                <h2>Book your appointments</h2>
+                <p></p>
+                <a href="/appoinment"><span>Click here to book</span></a></a>
+            </div>
+            <div>
+                <i class="fa-brands fa-rocketchat"></i><!-------------------logo ---------------------->
+                <h2>Chat with your Doc</h2>
+                <p></p>
+                <a href="/docs"><span>Click here to chat</span></a></a>
+            </div>
+
+        </div>
+
+        
+        </div>
+    </div>
+        
+    <div id="Doctors">
+        <div class="container">
+            <h1 class="sub-title">Our Doctors</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="static/portrait-doctor1.jpg">
+                    <div class="layer">
+                        <h3>Certified doctors</h3>
+                        <p></p>
+                        <a href="/doctinfo1"><i class="fa-solid fa-link"></i></a>
+                        <p>video call now</p>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="static/portrait-professional-medical-worker-posing-picture-with-arms-folded.jpg">
+                    <div class="layer">
+                        <h3>Trust worthy</h3>
+                        <p></p>
+                        <a href="/doctinfo2"><i class="fa-solid fa-link"></i></a>
+                        <p>view doc</p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="static/beautiful-young-female-doctor-looking-camera-office.jpg">
+                    <div class="layer">
+                        <h3> We have Transparency</h3>
+                        <p> </p>
+                        <a href="doctinfo3"><i class="fa-solid fa-link"></i></a>
+                        <p>view doc</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+
+    </div>
+    <!--------------------------------- contact ---------------------------------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-tittle">contact us</h2>
+                <p><i class="fa-regular fa-paper-plane"></i>webmedconsult@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9970090238</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100004225366941"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/its_arryan__/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aryan-dumbhare"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="CLEAN_CV_ARYAN.pdf" class="btn btn2">Downlode your report</a>
+            </div> 
+            <div class="contact-right">
+                <form name="t" action="/contact" method="POST">
+                    <input type="text" name="name" placeholder="yourname"required>
+                    <input type="email" name="email" placeholder="youremail"required>
+                        <textarea name="message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" name="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        
+
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy;Web-medconsult<i class="fa-regular fa-heart"></i>All rights reserve developer chandals</p>
+    </div>
+   </div>
+</div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classlist.add("active-tab");
+        }
+    </script>
+    <script>
+       var sidmue = document.getElementById("sidemenue");
+
+       function openmenue(){
+        sidmue.style.right="0";
+       }
+       function closemenue(){
+        sidmue.style.right="-150px";
+       }
+
+
+    </script>
+    
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby62N5eNzG06XIWTUYsp2IllBKIfKx-77X0JuyRzLHthF9p5bgLHHaHn-OJGl17mCmqRQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="message send successfully"
+                setTimeout (function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            } )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+
+
+</body>
+
+</html>
