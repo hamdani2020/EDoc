@@ -30,7 +30,7 @@ body {
 
     width: 100%;
     height: 100vh;
-    background-image: url(covid-19-healthcare-workers-online-medicine-concept-smiling-asian-female-doctor-physician-scrubs-pointing-finger-mobile-screen-recommend-download-checkup-consultation-application.jpg);
+    background-image: url(b.jpg);
     background-size:cover;
     background-position: right;
 }
@@ -58,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #060000;
+    color: #c6aeae;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -83,6 +83,10 @@ nav ul li a:hover::after {
 .headertext {
     margin-top: 20%;
     font-size: 30px;
+}
+
+.headertext h3 {
+    color: #F0EDE5
 }
 
 .headertext h1 {
