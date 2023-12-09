@@ -6,9 +6,10 @@ app = Flask(__name__)
 
 # app.secret_key = 'rushi'
 
-app.config['SQLALCHEMY_DATABASE_URI']="sqlite:///DATA.db"
+app.config['SQLALCHEMY_DATABASE_URI']="sqlite:///EDoc.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db=SQLAlchemy(app)
+app.app_context().push()
 
 class webmedconsultmaster(db.Model):
     sno = db.Column(db.Integer, primary_key=True)   
