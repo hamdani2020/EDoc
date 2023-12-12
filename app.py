@@ -11,7 +11,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db=SQLAlchemy(app)
 app.app_context().push()
 
-class webmedconsultmaster(db.Model):
+class edoc(db.Model):
     sno = db.Column(db.Integer, primary_key=True)   
     name = db.Column(db.String(80), nullable=False)
     phone = db.Column(db.Integer, nullable=False)
@@ -79,7 +79,7 @@ def form():
         Weight = request.form['Weight']
         bloodgroup = request.form['bloodgroup']
         print("Entered in loop")
-        rusih = webmedconsultmaster(name=name, phone=phone, email=email, Age=Age, gender=gender, height=height, Weight=Weight, bloodgroup=bloodgroup)
+        rusih = edoc(name=name, phone=phone, email=email, Age=Age, gender=gender, height=height, Weight=Weight, bloodgroup=bloodgroup)
         db.session.add(rusih)
         # db.session.commit()   
         print("Executed")
