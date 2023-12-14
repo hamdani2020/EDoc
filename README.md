@@ -7,6 +7,13 @@ EDoc is on a mission to make quality healthcare affordable and accessible to ove
 ## Landing Page
 ![image](/Screenshots/s.png)
 
+## Features
+
+- Video Chat
+- Appointment Booking
+- ChatBot with a Virtual Doc
+![image](/Screenshots/s0.png)
+
 ## Frontend
 - HTML
 - CSS
@@ -16,3 +23,5 @@ EDoc is on a mission to make quality healthcare affordable and accessible to ove
 
 - Python
 - Flask
+
+[LICENSE](LICENCE)
