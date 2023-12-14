@@ -6,3 +6,13 @@ EDoc is on a mission to make quality healthcare affordable and accessible to ove
 
 ## Landing Page
 ![image](/Screenshots/s.png)
+
+## Frontend
+- HTML
+- CSS
+- JavaScript
+
+## Backend
+
+- Python
+- Flask
