@@ -1,4 +1,1 @@
 import app
-
-
-app = app()
