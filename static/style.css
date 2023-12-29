@@ -58,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #c6aeae;
+    color: #d3651c;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -86,7 +86,7 @@ nav ul li a:hover::after {
 }
 
 .headertext h3 {
-    color: #F0EDE5
+    color: #d3651c
 }
 
 .headertext h1 {
