@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: WTForms-SQLAlchemy
+Version: 0.3
+Summary: SQLAlchemy tools for WTForms
+Home-page: http://github.com/wtforms/wtforms-sqlalchemy/
+Maintainer: Thomas Johansson, James Crasta
+Maintainer-email: wtforms@simplecodes.com
+License: BSD
+Project-URL: Documentation, https://wtforms-sqlalchemy.readthedocs.io/
+Project-URL: Code, https://github.com/wtforms/wtforms-sqlalchemy
+Project-URL: Issue Tracker, https://github.com/wtforms/wtforms-sqlalchemy/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: WTForms (>=1.0.5)
+Requires-Dist: SQLAlchemy (>=0.7.10)
+
+WTForms-SQLAlchemy
+==================
+
+.. image:: https://travis-ci.org/wtforms/wtforms-sqlalchemy.svg?branch=master
+    :target: https://travis-ci.org/wtforms/wtforms-sqlalchemy
+.. image:: https://readthedocs.org/projects/wtforms-sqlalchemy/badge/?version=latest&style=flat
+    :target: https://wtforms-sqlalchemy.readthedocs.io
+
+WTForms-SQLAlchemy is a fork of the ``wtforms.ext.sqlalchemy`` package from WTForms.
+The package has been renamed to ``wtforms_sqlalchemy`` but otherwise should
+function the same as ``wtforms.ext.sqlalchemy`` did.
+
+to install::
+
+    pip install WTForms-SQLAlchemy
+
+Python 3.6 to 3.10 are supported.
+
+An example using Flask is included in ``examples/flask``.
+
+Features
+--------
+
+1. Provide ``SelectField`` integration with SQLAlchemy models
+
+   - ``wtforms_sqlalchemy.fields.QuerySelectField``
+   - ``wtforms_sqlalchemy.fields.QuerySelectMultipleField``
+
+2. Generate forms from SQLAlchemy models using
+   ``wtforms_sqlalchemy.orm.model_form``
+
+Rationale
+---------
+
+The reasoning for splitting out this package is that WTForms 2.0 has
+deprecated all its ``wtforms.ext.<library>`` packages and they will
+not receive any further feature updates. The authors feel that packages
+for companion libraries work better with their own release schedule and
+the ability to diverge more from WTForms.
+
+

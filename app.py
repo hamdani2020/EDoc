@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# app.secret_key = 'rushi'
+#app.secret_key = 'rushi'
 
 app.config['SQLALCHEMY_DATABASE_URI']="sqlite:///EDoc.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -146,4 +146,6 @@ def appoinment():
     return render_template('appoinment.html')
 
 if __name__ =="__main__":
+    with app.app_context():
+        db.create_all()
     app.run(host='0.0.0.0', port=5007)
